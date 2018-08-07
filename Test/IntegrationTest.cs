@@ -75,7 +75,7 @@ namespace Test
         //    result.EnsureSuccessStatusCode();
         //}
         [Fact]
-        public async void TestPost()
+        public async void TestAll()
         {
             Notes note = new Notes
             {
@@ -88,8 +88,13 @@ namespace Test
             var stringContent = new StringContent(data, UnicodeEncoding.UTF8, "application/json");
             var Response = await _client.PostAsync("/api/Notes", stringContent);
             Response.EnsureSuccessStatusCode();
-            //var result = await _client.GetAsync("/api/Notes", data);
-        }
+            var TestGetById = await _client.GetAsync("/api/Notes/1");
+            TestGetById.EnsureSuccessStatusCode();
+            var TestDelete = await _client.GetAsync("/api/Notes/1");
+            TestDelete.EnsureSuccessStatusCode();
+        
+        //var result = await _client.GetAsync("/api/Notes", data);
+    }
 
 
     }

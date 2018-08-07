@@ -118,26 +118,26 @@ namespace Test
             data.Title.Should().Be("Note one");
 
         }
-        ////[Fact]
-        ////public async void TestPut()
-        ////{
-           
-        ////    var result = await _controller.GetTodoNotes();
-        ////    var data = result as List<Notes>;
-        ////    int save = data[0].Id;
-        ////    Notes note = new Notes
-        ////    {
-        ////        Id = save,
-        ////       Title = "testing Put",
-        ////        PlainText = "still testing",
-        ////        PinStatus = true,
-        ////    };
-        ////    var response = await _controller.PutTodoNotes(save, note);
-        ////    var resultAsOkObjectResult = response as OkObjectResult;
-        ////    //var notes = resultAsOkObjectResult.Value as Notes;
-        ////    Assert.Equal(204, resultAsOkObjectResult.StatusCode);
-            
-        ////}
+        //[Fact]
+        //public async void TestPut()
+        //{
+
+        //    var result = await _controller.GetTodoNotes();
+        //    var data = result as List<Notes>;
+        //    int save = data[0].Id;
+        //    Notes note = new Notes
+        //    {
+        //        Id = save,
+        //        Title = "testing Put",
+        //        PlainText = "still testing",
+        //        PinStatus = true,
+        //    };
+        //    var response = await _controller.PutTodoNotes(save, note);
+        //    var resultAsOkObjectResult = response as CreatedAtActionResult;
+        //    //var notes = resultAsOkObjectResult.Value as Notes;
+        //    Assert.Equal(204, resultAsOkObjectResult.StatusCode);
+
+        //}
         [Fact]
         public async void TestPost()
         {

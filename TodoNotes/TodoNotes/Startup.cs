@@ -26,10 +26,10 @@ namespace TodoNotes
         public IConfiguration Configuration { get; }
         public IHostingEnvironment Environment { get; }
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services, IHostingEnvironment environment)
+        public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            if(Environment.IsEnvironment ("Testing") )
+            if(Environment.IsEnvironment("Testing"))
             {
                 services.AddDbContext<TodoNotesContext>(options =>
                    options.UseInMemoryDatabase(Configuration.GetConnectionString("TestDb")));

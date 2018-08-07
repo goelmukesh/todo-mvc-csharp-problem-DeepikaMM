@@ -22,10 +22,11 @@ namespace TodoNotes.Controllers
 
         // GET: api/Notes
         [HttpGet]
-        public async Task<IActionResult> GetTodoNotes()
+        public async Task<IEnumerable<Notes>> GetTodoNotes()
         {
-            return Ok(_context.Notes.Include(p => p.checkList).Include
-               (p => p.label));
+            var x = await (_context.Notes.Include(p => p.checkList).Include
+               (p => p.label).ToListAsync());
+            return x;
 
         }
 
@@ -41,8 +42,8 @@ namespace TodoNotes.Controllers
             //var todoNotes = await _context.TodoNotes.FindAsync(id);
 
 
-            IEnumerable<Notes> todoNotes = _context.Notes.Include(p => p.checkList).Include
-              (p => p.label).Where(p => p.Id == id);
+            var  todoNotes = await _context.Notes.Include(p => p.checkList).Include
+              (p => p.label).SingleOrDefaultAsync(p => p.Id == id);
             if (todoNotes == null)
             {
                 return NotFound();
@@ -51,23 +52,22 @@ namespace TodoNotes.Controllers
             return Ok(todoNotes);
         }
         [HttpGet("{label}")]
-        public async Task<IActionResult> GetTodoNotes([FromQuery] string Label)
+        public async Task<IActionResult> GetTodoNotesLabel([FromQuery] string Label)
         {
-            IEnumerable<Notes> todoNotes = _context.Notes.Include(p => p.checkList).Include
-                (p => p.label).Where(p => p.label != null);
-            return Ok(todoNotes.Where(p => p.label.Any(q => q.LabelName == Label)));
+            var NonNullDatas = _context.Notes.Include(s => s.checkList).Include(s => s.label).Where(x => x.label != null);
+            return Ok(await NonNullDatas.Where(x => x.label.Any(y => y.LabelName == Label)).ToListAsync());
         }
         [HttpGet("pin/{PinnedStatus}")]
         public async Task<IActionResult> GetTodoNotes([FromRoute] bool PinnedStatus)
         {
-            IEnumerable<Notes> todoNotes = _context.Notes.Include(p => p.checkList).Include(p => p.label).Where(p => p.PinStatus == PinnedStatus);
+            IEnumerable<Notes> todoNotes = await _context.Notes.Include(p => p.checkList).Include(p => p.label).Where(p => p.PinStatus == PinnedStatus).ToListAsync();
             return Ok(todoNotes);
         }
         [HttpGet("title/{title}")]
-        public async Task<IActionResult> GetTodoNotesByTitle([FromRoute] string title)
+        public async Task<IEnumerable<Notes>> GetTodoNotesByTitle([FromRoute] string title)
         {
-            IEnumerable<Notes> todoNotes = _context.Notes.Include(p => p.checkList).Include(p => p.label).Where(p => p.Title == title);
-            return Ok(todoNotes);
+            var result =  await _context.Notes.Include(p => p.checkList).Include(p => p.label).Where(p => p.Title == title).ToListAsync();
+            return result;
 
         }
 

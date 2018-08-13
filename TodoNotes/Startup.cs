@@ -69,6 +69,8 @@ namespace TodoNotes
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
             });
+            //var context = app.ApplicationServices.GetService<TodoNotesContext>();
+           //context.Database.Migrate();
         }
     }
 }

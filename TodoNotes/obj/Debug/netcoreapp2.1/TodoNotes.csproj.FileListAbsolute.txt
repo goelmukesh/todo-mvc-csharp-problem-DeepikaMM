@@ -26,3 +26,17 @@ F:\WorkSpace\asp.net\todo-mvc-csharp-problem-DeepikaMM\TodoNotes\obj\Debug\netco
 F:\WorkSpace\asp.net\todo-mvc-csharp-problem-DeepikaMM\TodoNotes\obj\Debug\netcoreapp2.1\TodoNotes.RazorTargetAssemblyInfo.cache
 F:\WorkSpace\asp.net\todo-mvc-csharp-problem-DeepikaMM\TodoNotes\obj\Debug\netcoreapp2.1\TodoNotes.dll
 F:\WorkSpace\asp.net\todo-mvc-csharp-problem-DeepikaMM\TodoNotes\obj\Debug\netcoreapp2.1\TodoNotes.pdb
+F:\WorkSpace\DOCKER-COMPOSE\todo-mvc-csharp-problem-DeepikaMM\TodoNotes\bin\Debug\netcoreapp2.1\TodoNotes.deps.json
+F:\WorkSpace\DOCKER-COMPOSE\todo-mvc-csharp-problem-DeepikaMM\TodoNotes\bin\Debug\netcoreapp2.1\TodoNotes.runtimeconfig.json
+F:\WorkSpace\DOCKER-COMPOSE\todo-mvc-csharp-problem-DeepikaMM\TodoNotes\bin\Debug\netcoreapp2.1\TodoNotes.runtimeconfig.dev.json
+F:\WorkSpace\DOCKER-COMPOSE\todo-mvc-csharp-problem-DeepikaMM\TodoNotes\bin\Debug\netcoreapp2.1\TodoNotes.dll
+F:\WorkSpace\DOCKER-COMPOSE\todo-mvc-csharp-problem-DeepikaMM\TodoNotes\bin\Debug\netcoreapp2.1\TodoNotes.pdb
+F:\WorkSpace\DOCKER-COMPOSE\todo-mvc-csharp-problem-DeepikaMM\TodoNotes\obj\Debug\netcoreapp2.1\TodoNotes.csprojAssemblyReference.cache
+F:\WorkSpace\DOCKER-COMPOSE\todo-mvc-csharp-problem-DeepikaMM\TodoNotes\obj\Debug\netcoreapp2.1\TodoNotes.csproj.CoreCompileInputs.cache
+F:\WorkSpace\DOCKER-COMPOSE\todo-mvc-csharp-problem-DeepikaMM\TodoNotes\obj\Debug\netcoreapp2.1\TodoNotes.RazorAssemblyInfo.cache
+F:\WorkSpace\DOCKER-COMPOSE\todo-mvc-csharp-problem-DeepikaMM\TodoNotes\obj\Debug\netcoreapp2.1\TodoNotes.RazorAssemblyInfo.cs
+F:\WorkSpace\DOCKER-COMPOSE\todo-mvc-csharp-problem-DeepikaMM\TodoNotes\obj\Debug\netcoreapp2.1\TodoNotes.AssemblyInfoInputs.cache
+F:\WorkSpace\DOCKER-COMPOSE\todo-mvc-csharp-problem-DeepikaMM\TodoNotes\obj\Debug\netcoreapp2.1\TodoNotes.AssemblyInfo.cs
+F:\WorkSpace\DOCKER-COMPOSE\todo-mvc-csharp-problem-DeepikaMM\TodoNotes\obj\Debug\netcoreapp2.1\TodoNotes.RazorTargetAssemblyInfo.cache
+F:\WorkSpace\DOCKER-COMPOSE\todo-mvc-csharp-problem-DeepikaMM\TodoNotes\obj\Debug\netcoreapp2.1\TodoNotes.dll
+F:\WorkSpace\DOCKER-COMPOSE\todo-mvc-csharp-problem-DeepikaMM\TodoNotes\obj\Debug\netcoreapp2.1\TodoNotes.pdb

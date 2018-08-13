@@ -12329,6 +12329,7 @@
       "Microsoft.AspNetCore.HttpsPolicy >= 2.1.1",
       "Microsoft.AspNetCore.Mvc >= 2.1.1",
       "Microsoft.EntityFrameworkCore.Relational >= 2.1.1",
+      "Microsoft.EntityFrameworkCore.SqlServer >= 2.1.1",
       "Microsoft.NETCore.App >= 2.1.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.1",
       "Swashbuckle.AspNetCore >= 3.0.0"
@@ -12341,11 +12342,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\WorkSpace\\asp.net\\todo-mvc-csharp-problem-DeepikaMM\\TodoNotes\\TodoNotes.csproj",
+      "projectUniqueName": "F:\\WorkSpace\\DOCKER-COMPOSE\\todo-mvc-csharp-problem-DeepikaMM\\TodoNotes\\TodoNotes.csproj",
       "projectName": "TodoNotes",
-      "projectPath": "F:\\WorkSpace\\asp.net\\todo-mvc-csharp-problem-DeepikaMM\\TodoNotes\\TodoNotes.csproj",
+      "projectPath": "F:\\WorkSpace\\DOCKER-COMPOSE\\todo-mvc-csharp-problem-DeepikaMM\\TodoNotes\\TodoNotes.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "F:\\WorkSpace\\asp.net\\todo-mvc-csharp-problem-DeepikaMM\\TodoNotes\\obj\\",
+      "outputPath": "F:\\WorkSpace\\DOCKER-COMPOSE\\todo-mvc-csharp-problem-DeepikaMM\\TodoNotes\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12394,6 +12395,10 @@
             "version": "[2.1.1, )"
           },
           "Microsoft.EntityFrameworkCore.Relational": {
+            "target": "Package",
+            "version": "[2.1.1, )"
+          },
+          "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[2.1.1, )"
           },
